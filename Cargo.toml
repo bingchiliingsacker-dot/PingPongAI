@@ -1,0 +1,12 @@
+[package]
+name = "PingPongEnvRS"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "ping_pong_env_rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.29.0", features = ["extension-module"] }
+numpy = "0.29.0"
